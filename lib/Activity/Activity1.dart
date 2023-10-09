@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Activity1 extends StatelessWidget {
-  const Activity1({super.key});
+  String msg;
+
+  Activity1(this.msg, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,10 +12,10 @@ class Activity1 extends StatelessWidget {
       appBar: AppBar(
         title: Text("Activity 1"),
       ),
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [Text("Hello From Activity 1")],
+          children: [Text(msg)],
         ),
       ),
     );

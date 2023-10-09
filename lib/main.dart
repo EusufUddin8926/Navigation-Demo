@@ -34,13 +34,13 @@ class HomeScreenActivity extends StatelessWidget {
             ElevatedButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Activity1()));
+                      MaterialPageRoute(builder: (context) => Activity1("Hello From Activity 1")));
                 },
                 child: Text("Navigate to Activity 1")),
             ElevatedButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => Activity2()));
+                      MaterialPageRoute(builder: (context) => Activity2("Hello From Activity 2")));
                 }, child: Text("Navigate to Activity 2"))
           ],
         ),
